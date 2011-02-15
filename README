@@ -12,6 +12,8 @@ Fri Sep 10 20:20:18 EEST 2010
 
 ----
 
+http://help.github.com/remotes/
+
 create a new branch
 $ git checkout -b new
 Switched to a new branch 'new'
