@@ -7,4 +7,4 @@ git commit -m 'first commit'
 git remote add origin git@github.com:raul72/test.git
 git push origin master
 
-Fri Sep 10 20:20:18 EEST 2010
+Fri Sep 10 20:20:18 EEST 2010 
