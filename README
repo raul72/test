@@ -1,0 +1,56 @@
+Hello World!
+a
+mkdir test
+cd test
+git init
+touch README
+git add README
+git commit -m 'first commit'
+git remote add origin git@github.com:raul72/test.git
+git push origin master
+
+Fri Sep 10 20:20:18 EEST 2010 --
+
+----
+
+http://help.github.com/remotes/
+
+create a new branch
+$ git checkout -b new
+Switched to a new branch 'new'
+
+$ git commit -a -m '- commit changes'
+[new 1662129] - commit changes
+ 1 files changed, 0 insertions(+), 1 deletions(-)
+
+Push to new branch
+$ git push git@github.com:raul72/test.git new
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 260 bytes, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To git@github.com:raul72/test.git
+ * [new branch]      new -> new
+
+switch back to master branch
+$ git checkout master
+Switched to branch 'master'
+
+
+$ git merge new
+Updating ec7847c..1662129
+Fast-forward
+ README |    1 -
+ 1 files changed, 0 insertions(+), 1 deletions(-)
+
+Push merge
+$ git push git@github.com:raul72/test.git
+
+Delete branch
+$ git branch -D new
+Deleted branch new (was 1662129).
+
+Delete (in upstream)
+$ git push git@github.com:raul72/test.git :new
+
